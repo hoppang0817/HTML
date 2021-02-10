@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>입력 폼</title>
+</head>
+
+<body>
+  <form action="process.php">
+    <!-- Text -->
+    <div>
+      <label for="name">이름</label><br>
+      <input autofocus required type="text" id="name" name="name" placeholder="이름을 입력">
+    </div>
+    <!-- Email -->
+    <div>
+      <label for="email">이메일</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter an email">
+    </div>
+    <!-- Textarea 여러줄의 문장입력가능-->
+    <div>
+      <label for="message">메세지</label><br>
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <!-- Select = 선택창-->
+    <div>
+      <!-- selected 제일먼저나오는걸 선택 -->
+      <label for="gender">성별</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <!-- Number -->
+    <div>
+      <label for="age">나이</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <!-- Date  달력에서 선택가능-->
+    <div>
+      <label for="bithdate">생년월일</label><br>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <!-- Radio name이 같음 -->
+    <!-- 하나만 선택가능 -->
+    <div>
+      <label>멤버쉽</label>
+      <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+      <input type="radio" name="membership" value="simple" id="simple">심플
+      <input type="radio" name="membership" value="standard" id="standard">스탠다드
+      <input type="radio" name="membership" value="super" id="super" checked>슈퍼
+    </div>
+    <!-- Checkbox 다중 선택 가능 -->
+    <div>
+      <label>I Like</label>
+      <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+      <input type="checkbox" name="like1" value="bike" id="bike">오토바이
+      <input type="checkbox" name="like2" value="car" id="car">자동차
+      <input type="checkbox" name="like3" value="boat" id="boat">보트
+    </div>
+    <!-- Input submit -->
+    <input type="submit" value="제출">
+    <!-- Button submit -->
+    <!-- <button type="submit">Submit</button> -->
+    <button type="reset">리셋</button>
+  </form>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <h1>예약정보</h1>
+  <form action="process.php">
+
+    <div>
+      <label for="name1">이 름 </label>
+      <input type="text" id="name1" name="name">
+    </div>
+    <br>
+    <div>
+      <label for="pone">휴대폰</label>
+      <input type="tel" id="pone" name="tel">
+    </div>
+    <br>
+    <div>
+      <label for="email1">이메일</label>
+      <input type="email" id="email1" name="email">
+    </div>
+    <br>
+    <div>
+      <input type="submit" value="예약하기">
+    </div>
+    <hr>
+    <form>
+      <fieldset>
+        <legend>개인정보</legend>
+        name:<input type="text"><br>
+        Email: <input type="text"><br>
+      </fieldset>
+    </form>
+
+  </form>
+
+</body>
+
+</html>
