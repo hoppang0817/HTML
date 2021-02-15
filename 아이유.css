@@ -1,0 +1,23 @@
+body {
+  background-color: #ffe05d;
+}
+
+table tr td:nth-child(2) {
+  padding-left: 20px;
+}
+
+hr {
+  margin: 30px auto;
+  width: 80px;
+  border-style: none;
+  /* border-width: 10px;
+  border-color: #fd8c04;
+  border-top-style: dotted; */
+  /* 위에 세줄과 같음 */
+  border-top: 10px dotted #fd8c04;
+}
+
+a {
+  text-decoration: none;
+  color: #ec5858;
+}
